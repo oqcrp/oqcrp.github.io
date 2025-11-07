@@ -40,6 +40,38 @@
             margin: 0 auto;
             padding: 2rem;
         }
+        /* 新增关服公告样式 */
+        .closure-notice {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border-left: 6px solid #ff3838;
+            box-shadow: 0 4px 12px rgba(255, 59, 59, 0.2);
+            text-align: center;
+        }
+        .closure-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .closure-content {
+            background-color: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .closure-highlight {
+            background-color: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-weight: bold;
+        }
         .banner {
             background: url("https://images.weserv.nl/?url=https://picsum.photos/id/1039/1200/400") no-repeat center;
             background-size: cover;
@@ -195,6 +227,25 @@
         <h1 id="title">OQCRP 官方前旗县角色扮演 - 官网</h1>
     </div>
     <div class="container">
+        <!-- 新增关服公告 -->
+        <div class="closure-notice" id="closure-notice">
+            <div class="closure-title">❌CLOSED❌</div>
+            <div class="closure-content" id="closure-content">
+                亲爱的各位热爱角色扮演的小伙伴们：<br><br>
+                大家好！首先，要向每一位一直以来陪伴着这个社区、用心演绎每一个角色的你，说一声最真挚的感谢。从服务器开启至今，我们见证了大家在专属地图里创造的精彩故事——或许是偶遇的戏剧性瞬间，是冒险途中的并肩作战，或是阵营之间的趣味博弈，这些由你们共同编织的片刻，才让这个虚拟世界有了温度与意义。<br><br>
+                然而，近期我们不得不面对一个现实：服务器的活跃人数始终未能达到预期，这也导致地图中的互动氛围不够浓厚，许多精心设计的剧情与场景未能充分发挥价值，部分小伙伴可能也感受到了"独自探索"的孤单。为了不辜负大家对角色扮演的热爱，也为了让这个小社区能真正成为大家尽情挥洒创意、畅快互动的乐园，经过反复斟酌，我们决定暂时关闭服务器，进行一次全面的修整与优化。<br><br>
+                <div class="closure-highlight">
+                    此次关服期间，我们将全力投入于提升游玩体验的核心方向，包括：<br>
+                    - 角色互动机制优化：调整职业与技能平衡，新增团队协作任务；<br>
+                    - 社群活动体系搭建。
+                </div>
+                请大家放心，服务器关闭期间，所有动态与更新将通过官方渠道（如社群群聊、公告频道）及时同步。待服务器重新开放时，我们会为每一位回归的小伙伴准备"专属回归礼包"（内含稀有道具、限定角色装饰、剧情解锁特权等），以此回馈大家的耐心等待与不离不弃。<br><br>
+                再次为此次关服修整给大家带来的不便深表歉意，也由衷感谢每一位的理解与支持。这个小社区因为有你们才珍贵，我们一定会全力以赴，让回归后的服务器更热闹、更精彩，让大家能在熟悉的地图中，续写更多难忘的角色扮演故事！<br><br>
+                期待与每一个鲜活的角色，在焕然一新的世界里重逢！
+            </div>
+            <div class="closure-title" style="margin-top: 1.5rem;">❌CLOSED❌</div>
+        </div>
+
         <div class="banner">
             <div class="banner-text">
                 <h2 id="banner-title">欢迎来到官方前旗县角色扮演官网</h2>
@@ -237,20 +288,20 @@
         </div>
 
         <div class="discord-section">
-            <h2 id="discord-title">加入 OQCRP </h2>
+            <h2 id="discord-title">加入 OQCRP 社区</h2>
             <p class="discord-small" id="discord-desc">点击下方按钮打开 Discord 并进入 OQCRP</p>
             <a href="https://discord.gg/gAhJwuqThf" class="discord-btn" id="discord-btn" target="_blank">
-                加入 OQCRP
+                加入 Discord 社区
             </a>
         </div>
 
         <div class="qq-group-section">
             <h2 id="qq-title">📱 官方QQ交流群</h2>
-            <p id="qq-desc">点击按钮加入，获取最新游戏资讯</p>
+            <p id="qq-desc">扫码或点击链接加入，获取最新游戏资讯和专属福利</p>
             <a href="https://qm.qq.com/q/pncyw1Mwhi" class="qq-group-btn" id="qq-btn" target="_blank">
                 点击加入QQ群
             </a>
-            <p class="qq-group-tip" id="qq-tip">群链接长期有效，若无法打开可复制链接到QQ内打开，如果实在打不开请联系网站所有者（抖音：roblox_kakadadi）</p>
+            <p class="qq-group-tip" id="qq-tip">群链接长期有效，若无法打开可复制链接到QQ内打开</p>
         </div>
 
         <div class="screenshots">
@@ -278,6 +329,64 @@
                 ja: "OQCRP 公式前旗県ロールプレイ - 公式サイト",
                 ko: "OQCRP 공식 전기현 롤플레이 - 공식 웹사이트",
                 es: "OQCRP Oficial Qianqi County Roleplay - Sitio Web Oficial"
+            },
+            // 关服公告
+            closureContent: {
+                zh: `亲爱的各位热爱角色扮演的小伙伴们：<br><br>
+                大家好！首先，要向每一位一直以来陪伴着这个社区、用心演绎每一个角色的你，说一声最真挚的感谢。从服务器开启至今，我们见证了大家在专属地图里创造的精彩故事——或许是偶遇的戏剧性瞬间，是冒险途中的并肩作战，或是阵营之间的趣味博弈，这些由你们共同编织的片刻，才让这个虚拟世界有了温度与意义。<br><br>
+                然而，近期我们不得不面对一个现实：服务器的活跃人数始终未能达到预期，这也导致地图中的互动氛围不够浓厚，许多精心设计的剧情与场景未能充分发挥价值，部分小伙伴可能也感受到了"独自探索"的孤单。为了不辜负大家对角色扮演的热爱，也为了让这个小社区能真正成为大家尽情挥洒创意、畅快互动的乐园，经过反复斟酌，我们决定暂时关闭服务器，进行一次全面的修整与优化。<br><br>
+                <div class="closure-highlight">
+                    此次关服期间，我们将全力投入于提升游玩体验的核心方向，包括：<br>
+                    - 角色互动机制优化：调整职业与技能平衡，新增团队协作任务；<br>
+                    - 社群活动体系搭建。
+                </div>
+                请大家放心，服务器关闭期间，所有动态与更新将通过官方渠道（如社群群聊、公告频道）及时同步。待服务器重新开放时，我们会为每一位回归的小伙伴准备"专属回归礼包"（内含稀有道具、限定角色装饰、剧情解锁特权等），以此回馈大家的耐心等待与不离不弃。<br><br>
+                再次为此次关服修整给大家带来的不便深表歉意，也由衷感谢每一位的理解与支持。这个小社区因为有你们才珍贵，我们一定会全力以赴，让回归后的服务器更热闹、更精彩，让大家能在熟悉的地图中，续写更多难忘的角色扮演故事！<br><br>
+                期待与每一个鲜活的角色，在焕然一新的世界里重逢！`,
+                en: `Dear friends who love role-playing:<br><br>
+                Hello everyone! First of all, we would like to express our most sincere gratitude to each and every one of you who has been accompanying this community and carefully interpreting every character. Since the server opened, we have witnessed the wonderful stories you created in the exclusive map - whether it was a dramatic encounter, fighting side by side on an adventure, or interesting games between camps, these moments woven together by you have given this virtual world warmth and meaning.<br><br>
+                However, recently we have to face a reality: the server's active population has consistently fallen short of expectations, which has also led to an insufficiently lively interactive atmosphere in the map. Many carefully designed plots and scenes have not been fully utilized, and some friends may have felt the loneliness of "exploring alone." In order to live up to everyone's love for role-playing and to make this small community truly a paradise where everyone can freely unleash their creativity and interact happily, after careful consideration, we have decided to temporarily close the server for comprehensive repairs and optimizations.<br><br>
+                <div class="closure-highlight">
+                    During this closure period, we will fully devote ourselves to improving the core aspects of the gaming experience, including:<br>
+                    - Optimization of character interaction mechanisms: adjusting profession/skill balance, adding team collaboration tasks;<br>
+                    - Construction of community activity systems.
+                </div>
+                Please rest assured that during the server closure, all updates will be promptly synchronized through official channels (such as community group chats and announcement channels). When the server reopens, we will prepare an "exclusive return package" for every returning friend (containing rare items, limited character decorations, plot unlocking privileges, etc.) to reward everyone for their patience and unwavering support.<br><br>
+                We once again deeply apologize for the inconvenience caused by this server closure and sincerely thank everyone for their understanding and support. This small community is precious because of you. We will definitely go all out to make the returning server more lively and exciting, allowing everyone to continue writing more unforgettable role-playing stories in the familiar map!<br><br>
+                Looking forward to meeting every vibrant character in a brand new world!`,
+                ja: `ロールプレイを愛する皆さんへ：<br><br>
+                こんにちは、皆さん！まず、このコミュニティにずっと寄り添い、それぞれのキャラクターを心を込めて演じてきた皆さん一人一人に、心からの感謝の意を表します。サーバーが開設されて以来、私たちは専用マップで皆さんが創り出した素晴らしい物語を目撃してきました——偶然のドラマチックな出会い、冒険の途中での肩を並べての戦い、あるいは陣営間の興味深い駆け引きなど、皆さんが共に紡いだこれらの瞬間が、この仮想世界に温もりと意味を与えてきました。<br><br>
+                しかし、最近私たちは現実に向き合わなければなりません：サーバーのアクティブ人数が期待に達しておらず、マップ内のインタラクションの雰囲けが十分に盛り上がっていないこともあり、多くの精巧にデザインされたプロットやシーンが十分に活用されていません。一部の方は「一人で探索する」孤独を感じたかもしれません。ロールプレイに対する皆さんの愛に応えるため、そしてこの小さなコミュニティを皆さんが創造性を存分に発揮し、楽しく交流できる楽園にするために、慎重に検討した結果、サーバーを一時的に閉鎖し、全面的な修整と最適化を行うことを決定しました。<br><br>
+                <div class="closure-highlight">
+                    今回の閉鎖期間中、私たちはゲーム体験の向上に全力を注ぎます。これには以下が含まれます：<br>
+                    - キャラクターインタラクションメカニズムの最適化：職業/スキルのバランス調整、チーム協力タスクの追加；<br>
+                    - コミュニティ活動システムの構築。
+                </div>
+                ご安心ください。サーバー閉鎖期間中、すべての動向と更新は公式チャンネル（コミュニティグループチャット、告知チャンネルなど）を通じて随時同期されます。サーバーが再開された際、お戻りになる皆さん一人一人に「限定リターンパッケージ」（レアアイテム、限定キャラクター装飾、プロットアンロック特権などを含む）を準備し、皆さんの忍耐強い待機と変わらぬ支持にお応えします。<br><br>
+                今回のサーバー閉鎖による不便に対し、改めて深くお詫び申し上げるとともに、皆様のご理解とご支援に心から感謝いたします。この小さなコミュニティは皆さんがいるからこそ貴重なのです。私たちは必ず全力を尽くし、再開後のサーバーをより賑やかで、よりエキサイティングなものにし、皆さんがおなじみのマップでより忘れられないロールプレイの物語を続けられるようにします！<br><br>
+                生き生きとしたすべてのキャラクターと、新たに生まれ変わった世界で再会するのを楽しみにしています！`,
+                ko: `역할 연기를 사랑하는 여러분께:<br><br>
+                안녕하세요, 여러분! 먼저, 이 커뮤니티와 함께 해주고 각 캐릭터를 세심하게 연기해 온 여러분 각자에게 진심 어린 감사의 인사를 전합니다. 서버가 개설된 이후, 우리는 전용 맵에서 여러분이 창조한 멋진 이야기들을 목격했습니다——우연한 극적인 만남, 모험 중 나란히 싸움, 혹은 진영 간의 흥미로운 게임 등, 여러분이 함께 엮어낸 이 순간들이 이 가상 세계에 따뜻함과 의미를 부여했습니다.<br><br>
+                그러나 최근 우리는 현실을 마주해야 합니다: 서버의 활성 인원이 기대에 미치지 못하고 있으며, 이로 인해 맵 내 상호작용 분위기가 충분히 활발하지 않습니다. 많은 정성 들여 설계된 플롯과 장면들이 제대로 활용되지 못하고 있으며, 일부 분들은 '혼자 탐험하는' 외로움을 느꼈을 수도 있습니다. 역할 연기에 대한 여러분의 사랑에 부응하기 위해, 그리고 이 작은 커뮤니티가 모두가 창의력을 마음껏 발휘하고 즐겁게 소통할 수 있는 낙원이 되도록 하기 위해, 신중히 고려한 끝에 서버를 일시적으로 닫고 전면적인 수정과 최적화를 진행하기로 결정했습니다.<br><br>
+                <div class="closure-highlight">
+                    이번 폐쇄 기간 동안, 우리는 게임 경험 향상에 전념할 것입니다. 여기에는 다음이 포함됩니다:<br>
+                    - 캐릭터 상호작용 메커니즘 최적화: 직업/스킬 밸런스 조정, 팀 협업 임무 추가;<br>
+                    - 커뮤니티 활동 체계 구축.
+                </div>
+                안심하세요. 서버 폐쇄 기간 동안 모든 동향과 업데이트는 공식 채널(커뮤니티 그룹 채팅, 공지 채널 등)을 통해 적시에 동기화됩니다. 서버가 재개될 때, 돌아오는 여러분 각자에게 '전속 귀환 패키지'(희귀 아이템, 한정 캐릭터 장식, 플롯 잠금 해제 특권 등 포함)를 준비하여, 여러분의 인내심 있는 기다림과 변함없는 지지에 보답하겠습니다.<br><br>
+                이번 서버 폐쇄로 인한 불편함에 대해 다시 한번 깊이 사과드리며, 여러분의 이해와 지원에 진심으로 감사드립니다. 이 작은 커뮤니티는 여러분이 있기에 소중합니다. 우리는 반드시 전력을 다해, 재개后的 서버를 더욱 활기차고 흥미진진하게 만들어, 여러분이 익숙한 맵에서 더 잊지 못할 역할 연기 이야기를 계속 써나갈 수 있도록 하겠습니다!<br><br>
+                생생한 모든 캐릭터와 새롭게 단장한 세계에서 다시 만나길 고대하겠습니다!`,
+                es: `Estimados amigos amantes del roleo:<br><br>
+                ¡Hola a todos! En primer lugar, queremos expresar nuestro más sincero agradecimiento a cada uno de ustedes que ha estado acompañando a esta comunidad e interpretando cuidadosamente cada personaje. Desde que se abrió el servidor, hemos sido testigos de las maravillosas historias que crearon en el mapa exclusivo: ya sea un encuentro dramático casual, luchando codo a codo en una aventura, o juegos interesantes entre facciones, estos momentos tejidos juntos por ustedes han dado calidez y significado a este mundo virtual.<br><br>
+                Sin embargo, recientemente tenemos que enfrentar una realidad: la población activa del servidor no ha cumplido con las expectativas, lo que también ha llevado a una atmósfera interactiva insuficientemente animada en el mapa. Muchas tramas y escenas cuidadosamente diseñadas no se han utilizado plenamente, y algunos amigos pueden haber sentido la soledad de "explorar solo". Para estar a la altura del amor de todos por el roleo y para que esta pequeña comunidad sea verdaderamente un paraíso donde todos puedan desatar libremente su creatividad e interactuar felizmente, después de una cuidadosa consideración, hemos decidido cerrar temporalmente el servidor para realizar reparaciones y optimizaciones integrales.<br><br>
+                <div class="closure-highlight">
+                    Durante este período de cierre, nos dedicaremos por completo a mejorar los aspectos centrales de la experiencia de juego, incluyendo:<br>
+                    - Optimización de los mecanismos de interacción de personajes: ajuste del equilibrio de profesiones/habilidades, adición de tareas de colaboración en equipo;<br>
+                    - Construcción de sistemas de actividades comunitarias.
+                </div>
+                Por favor, tengan la seguridad de que durante el cierre del servidor, todas las actualizaciones se sincronizarán oportunamente a través de los canales oficiales (como chats grupales de la comunidad y canales de anuncios). Cuando el servidor se reanude, prepararemos un "paquete de regreso exclusivo" para cada amigo que regrese (que contiene artículos raros, decoraciones de personajes limitadas, privilegios de desbloqueo de tramas, etc.) para recompensar a todos por su paciencia e inquebrantable apoyo.<br><br>
+                Una vez más, nos disculpamos profundamente por las molestias causadas por este cierre del servidor y agradecemos sinceramente a todos por su comprensión y apoyo. Esta pequeña comunidad es preciosa gracias a ustedes. ¡Definitivamente daremos todo de nosotros para hacer que el servidor que regresa sea más animado y emocionante, permitiendo que todos continúen escribiendo más historias de roleo inolvidables en el mapa familiar!<br><br>
+                ¡Esperamos encontrarnos con cada personaje vibrante en un mundo completamente nuevo!`
             },
             // Banner
             bannerTitle: {
@@ -386,11 +495,11 @@
             },
             // Discord 区域
             discordTitle: {
-                zh: "加入 OQCRP",
-                en: "Join the OQCRP",
-                ja: "OQCRP に参加",
-                ko: "OQCRP 가입",
-                es: "Únete a la OQCRP"
+                zh: "加入 OQCRP 社区",
+                en: "Join the OQCRP Community",
+                ja: "OQCRP コミュニティに参加",
+                ko: "OQCRP 커뮤니티에 가입",
+                es: "Únete a la Comunidad OQCRP"
             },
             discordDesc: {
                 zh: "点击下方按钮打开 Discord 并进入 OQCRP",
@@ -400,11 +509,11 @@
                 es: "Haga clic en el botón de abajo para abrir Discord y unirse a OQCRP."
             },
             discordBtn: {
-                zh: "加入 OQCRP",
-                en: "Join OQCRP",
-                ja: "OQCRP に参加",
-                ko: "OQCRP 가입",
-                es: "Únete a la de OQCRP"
+                zh: "加入 Discord 社区",
+                en: "Join Discord Community",
+                ja: "Discordコミュニティに参加",
+                ko: "Discord 커뮤니티에 가입",
+                es: "Únete a la Comunidad de Discord"
             },
             // QQ 区域
             qqTitle: {
@@ -415,11 +524,11 @@
                 es: "📱 Grupo Oficial de QQ"
             },
             qqDesc: {
-                zh: "点击按钮加入，获取最新游戏资讯",
-                en: "click the Button to join, get the latest game information.",
-                ja: "ボタンをクリックして参加し、最新のゲーム情報入手する。",
-                ko: "최신 게임 정보를 보려면 버튼을 클릭하여 가입하십시오.",
-                es: "Haz clic en el botón para acceder a la información más reciente del juego."
+                zh: "扫码或点击链接加入，获取最新游戏资讯和专属福利",
+                en: "Scan the code or click the link to join, get the latest game information and exclusive benefits.",
+                ja: "QRコードをスキャンするかリンクをクリックして参加し、最新のゲーム情報と限定特典を入手してください。",
+                ko: "QR 코드를 스캔하거나 링크를 클릭하여 가입하고 최신 게임 정보와 독점 혜택을 받으세요.",
+                es: "Escanee el código QR o haga clic en el enlace para unirse, obtenga la información del juego más reciente y beneficios exclusivos."
             },
             qqBtn: {
                 zh: "点击加入QQ群",
@@ -429,11 +538,11 @@
                 es: "Únete al Grupo de QQ Ahora"
             },
             qqTip: {
-                zh: "群链接长期有效，若无法打开可复制链接到QQ内打开，如果实在打不开请联系网站所有者（抖音：roblox_kakadadi）",
-                en: "The group link is valid indefinitely. If you cannot open it, please copy the link and open it in QQ. If you still cannot open it, please contact the website owner (Douyin: roblox_kakadadi).",
-                ja: "グループリンクは無期限に有効です。開けない場合は、リンクをコピーしてQQで開いてください。それでも開けない場合は、ウェブサイトの所有者（Douyin：roblox_kakadadi）にお問い合わせください。",
-                ko: "그룹 링크는 무기한 유효합니다. 링크가 열리지 않으면 링크를 복사하여 QQ에서 열어주세요. 그래도 열리지 않으면 웹사이트 운영자(더잉: roblox_kakadadi)에게 문의하세요.",
-                es: "El enlace del grupo es válido indefinidamente. Si no puedes abrirlo, copia el enlace y ábrelo en QQ. Si aún así no puedes abrirlo, contacta con el propietario del sitio web (Douyin: roblox_kakadadi)."
+                zh: "群链接长期有效，若无法打开可复制链接到QQ内打开",
+                en: "The group link is valid for a long time. If it cannot be opened, you can copy the link and open it in QQ.",
+                ja: "グループリンクは長期有効です。開けない場合はリンクをコピーしてQQで開いてください。",
+                ko: "그룹 링크는 장기간 유효합니다. 열리지 않는 경우 링크를 복사하여 QQ에서 열어주세요.",
+                es: "El enlace del grupo es válido por mucho tiempo. Si no se puede abrir, puede copiar el enlace y abrirlo en QQ."
             },
             // 截图区域
             screenshotTitle: {
@@ -466,6 +575,8 @@
 
             // 更新标题
             document.getElementById('title').textContent = translations.title[lang];
+            // 更新关服公告
+            document.getElementById('closure-content').innerHTML = translations.closureContent[lang];
             // 更新 Banner
             document.getElementById('banner-title').textContent = translations.bannerTitle[lang];
             document.getElementById('banner-desc').textContent = translations.bannerDesc[lang];

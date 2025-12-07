@@ -339,56 +339,129 @@
         <div class="screenshots">
             <h2 id="screenshot-title">游戏截图</h2>
             <div class="screenshot-grid">
-            <div style="
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 强制3列，全设备统一 */
-  grid-template-rows: repeat(2, 1fr);    /* 强制2行，全设备统一 */
-  gap: 1.2rem; /* 图片间距，可微调 */
-  padding: 2rem;
-  background: linear-gradient(135deg, #141414 0%, #1e1e1e 100%);
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 3px 15px rgba(0,0,0,0.6);
-  max-width: 1200px;
-  margin: 0 auto; /* 容器居中 */
-">
-  <!-- 第1行第1列 -->
-  <img 
-    src="https://ibb.co/svqp2VXV" 
-    alt="游戏场景截图1" 
-    style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"
-  >
-  <!-- 第1行第2列 -->
-  <img 
-    src="https://ibb.co/Kz34rQGX" 
-    alt="游戏场景截图2" 
-    style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"
-  >
-  <!-- 第1行第3列 -->
-  <img 
-    src="https://ibb.co/Lzr477gW" 
-    alt="游戏场景截图3" 
-    style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"
-  >
-  <!-- 第2行第1列 -->
-  <img 
-    src="https://ibb.co/KcFNGmkw" 
-    alt="游戏场景截图4" 
-    style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"
-  >
-  <!-- 第2行第2列 -->
-  <img 
-    src="https://ibb.co/TMwnmxMy" 
-    alt="游戏场景截图5" 
-    style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"
-  >
-  <!-- 第2行第3列 -->
-  <img 
-    src="https://ibb.co/Kc7c8Pnp" 
-    alt="游戏场景截图6" 
-    style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"
-  >
+            <div class="screenshots">
+  <h2 id="screenshot-title">游戏截图</h2>
+  <!-- 轮播容器：适配原图+暗黑风格 -->
+  <div class="screenshot-grid" style="
+    position: relative;
+    max-width: 800px; /* 紧凑尺寸，不占地 */
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #141414 0%, #1e1e1e 100%);
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 3px 15px rgba(0,0,0,0.6);
+  ">
+    <!-- 图片容器：溢出隐藏+适配原图比例 -->
+    <div style="
+      overflow: hidden;
+      border-radius: 8px;
+      height: 450px; /* 适配原图高度，清晰展示 */
+      position: relative;
+    ">
+      <div id="single-carousel" style="
+        display: flex;
+        transition: transform 0.6s ease; /* 丝滑切换动画 */
+        height: 100%;
+      ">
+        <!-- ✅ 直接复用你的原图直链（src完全照搬，零错误） -->
+        <img src="https://i.ibb.co/C5QpzHSH/Screenshot-20251002-224524-com-roblox-client.jpg" alt="游戏场景截图1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; background: #0a0a0a; border: 0;">
+        <img src="https://i.ibb.co/h1tQmnMy/Screenshot-20251002-224608-com-roblox-client.jpg" alt="游戏场景截图2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; background: #0a0a0a; border: 0;">
+        <img src="https://i.ibb.co/JRqXJJp4/Screenshot-20251002-224559-com-roblox-client.jpg" alt="游戏场景截图3" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; background: #0a0a0a; border: 0;">
+        <img src="https://i.ibb.co/j9G9jNtP/Image-1759416447764.jpg" alt="游戏场景截图4" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; background: #0a0a0a; border: 0;">
+        <img src="https://i.ibb.co/zVmLGTVd/Screenshot-20251002-224321-com-roblox-client.jpg" alt="游戏场景截图5" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; background: #0a0a0a; border: 0;">
+        <img src="https://i.ibb.co/5XBY92yF/Image-1759416460277.jpg" alt="游戏场景截图6" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; background: #0a0a0a; border: 0;">
+      </div>
+    </div>
+
+    <!-- 左箭头：小巧精致+悬浮高亮 -->
+    <button onclick="prevSingleSlide()" style="
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.7);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s ease;
+    ">◀</button>
+
+    <!-- 右箭头：同上 -->
+    <button onclick="nextSingleSlide()" style="
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.7);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s ease;
+    ">▶</button>
+
+    <!-- 轮播指示器：小圆点精准定位 -->
+    <div style="
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 15px;
+    ">
+      <span onclick="currentSingleSlide(1)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.8); cursor: pointer;"></span>
+      <span onclick="currentSingleSlide(2)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer;"></span>
+      <span onclick="currentSingleSlide(3)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer;"></span>
+      <span onclick="currentSingleSlide(4)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer;"></span>
+      <span onclick="currentSingleSlide(5)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer;"></span>
+      <span onclick="currentSingleSlide(6)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer;"></span>
+    </div>
+  </div>
 </div>
+
+<!-- 轮播核心脚本：自动轮回+手动控制+悬浮暂停 -->
+<script>
+  let singleSlideIndex = 1;
+  let autoPlay = setInterval(nextSingleSlide, 4500); // 4.5秒切换一张（节奏舒适）
+  showSingleSlides(singleSlideIndex);
+
+  // 下一张/上一张切换
+  function nextSingleSlide() { showSingleSlides(singleSlideIndex += 1); }
+  function prevSingleSlide() { showSingleSlides(singleSlideIndex -= 1); }
+
+  // 点击小圆点跳转对应图片
+  function currentSingleSlide(n) { showSingleSlides(singleSlideIndex = n); }
+
+  // 无限轮回核心逻辑
+  function showSingleSlides(n) {
+    const slides = document.getElementById("single-carousel").children;
+    const dots = document.querySelectorAll('.screenshot-grid span');
+    
+    // 循环机制：最后一张→第一张，第一张→最后一张
+    if (n > slides.length) singleSlideIndex = 1;
+    if (n < 1) singleSlideIndex = slides.length;
+    
+    // 平滑滑动切换（核心动画）
+    document.getElementById("single-carousel").style.transform = `translateX(-${(singleSlideIndex - 1) * 100}%)`;
+    
+    // 小圆点高亮当前图片
+    dots.forEach(dot => dot.style.backgroundColor = "rgba(255,255,255,0.3)");
+    dots[singleSlideIndex - 1].style.backgroundColor = "rgba(255,255,255,0.8)";
+  }
+
+  // 鼠标悬浮暂停轮播，移开自动恢复（优化体验）
+  const carouselContainer = document.querySelector('.screenshot-grid');
+  carouselContainer.onmouseover = () => clearInterval(autoPlay);
+  carouselContainer.onmouseout = () => autoPlay = setInterval(nextSingleSlide, 4500);
+</script>
             </div>
         </div>
     </div>

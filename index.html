@@ -15,6 +15,11 @@
   margin-top: 80px; padding:20px;
   font-size:15px; line-height:1.7;
 }
+/* 让音乐按钮居中、显眼一点 */
+.music-box {
+  text-align:center;
+  margin:20px 0;
+}
 </style>
 </head>
 <body>
@@ -27,13 +32,16 @@
 <p>OQCRP结束运营</p>
 <p>2026年2月4日11时29分，OQCRP Owner bilibili_cny正式宣布停止运营，从2025年9月27日到2026年2月4日这4个月零8天里我们开了大概100次左右的会议，官方Discord社区可以加入，公共服务器QQ群可以加入，Roblox游戏可以加入，此网站将不会显示这些网址和群号，想加入的请联系抖音Roblox_kakadadi，我们不决定重启服务器，就像OTCRP一样，Owner已退出角色扮演相关服务器和这个服务器，要关闭OQCRP呢？因为人实在是太少了，服务器人少也没有人参加会议。感谢大家陪伴</p>
 <p>by 网站运营者roblox_kakadadi</p>
-<p><strong>OQCRP啊OQCRP你怎么就这么走了啊！😭我不想让你走😭</strong></p>
+
+<div class="music-box">
+  <p><strong>OQCRP啊OQCRP你怎么就这么走了啊！😭我不想让你走😭</strong></p>
+  <!-- 这里放音乐按钮，点了绝对能响 -->
+  <audio controls loop>
+    <source src="aiyue.mp3" type="audio/mpeg">
+  
 </div>
 
-<!-- 自动背景音乐：隐藏、无按钮、循环 -->
-<audio autoplay loop style="display:none;">
-  <source src="aiyue.mp3" type="audio/mpeg">
-
+</div>
 
 </body>
 </html>

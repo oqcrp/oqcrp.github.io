@@ -15,7 +15,6 @@
   margin-top: 80px; padding:20px;
   font-size:15px; line-height:1.7;
 }
-/* 让音乐按钮居中、显眼一点 */
 .music-box {
   text-align:center;
   margin:20px 0;
@@ -35,13 +34,21 @@
 
 <div class="music-box">
   <p><strong>OQCRP啊OQCRP你怎么就这么走了啊！😭我不想让你走😭</strong></p>
-  <!-- 这里放音乐按钮，点了绝对能响 -->
-  <audio controls loop>
+  <audio id="bgm" controls loop>
     <source src="aiyue.mp3" type="audio/mpeg">
   
 </div>
 
 </div>
+
+<script>
+// 页面加载完成后自动播放
+window.addEventListener('DOMContentLoaded', function() {
+  const audio = document.getElementById('bgm');
+  // 自动播放（浏览器限制下大概率需要用户有交互才会真的响）
+  audio.play().catch(err => console.log('自动播放被浏览器限制，请手动点击播放'));
+});
+</script>
 
 </body>
 </html>
